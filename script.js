@@ -18,4 +18,5 @@
   }
 modelViewer2.addEventListener('mouseover',pause);
 modelViewer2.addEventListener('mouseout',play2);
-
+modelViewer2.addEventListener('touchstart',pause);
+modelViewer2.addEventListener('touchend',play2);
