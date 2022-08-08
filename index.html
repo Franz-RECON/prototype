@@ -14,7 +14,9 @@
     <!-- <model-viewer> HTML element -->
     <div id="modelviewer">
         <model-viewer id="firstmodel" src="animation_rotation.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> </model-viewer>
+        위 뷰어는 처음 두바퀴를 회전하고 멈춥니다.
         <model-viewer id="secondmodel" src="animation_rotation2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
+        위 뷰어는 터치하거나 마우스를 올리면 멈췄다가 떼면 다시 돌아가요
     </div>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
