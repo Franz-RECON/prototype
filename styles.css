@@ -10,12 +10,12 @@ body {
 }
 
 model-viewer {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  margin: 10px;
   border-radius: 8px;
  /* border: 2px solid #1e1e1e;*/
 }
@@ -23,6 +23,7 @@ model-viewer {
 #modelviewer
 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
