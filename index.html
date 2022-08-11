@@ -12,11 +12,25 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <div id="modelviewer">
-        <model-viewer id="firstmodel" src="animation_rotation.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> </model-viewer>
-        위 뷰어는 처음 두바퀴를 회전하고 멈춥니다.
-        <model-viewer id="secondmodel" src="animation_rotation2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
-        위 뷰어는 터치하거나 마우스를 올리면 멈췄다가 떼면 다시 돌아가요
+    <div id="modelviewer_container">
+        <div class="each_viewer_container">  
+          <model-viewer id="firstmodel" src="animation_rotation.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> 
+          </model-viewer>
+          위 뷰어는 처음 두바퀴를 회전하고 멈춥니다.
+        </div>
+        <div class="each_viewer_container">
+          <model-viewer id="secondmodel" src="animation_rotation2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
+          위 뷰어는 터치하거나 마우스를 올리면 멈췄다가 떼면 다시 돌아가요
+        </div>
+
+        <div class="each_viewer_container">
+          <model-viewer id="thirdmodel" src="stopped.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> 
+          </model-viewer>
+          <button class="view-button" slot="hotspot-0" data-position="-0.0569m 0.0969m -0.1398m" data-normal="-0.5829775m 0.2863482m -0.7603565m" data-orbit="-50.94862deg 84.56856deg 0.06545582m" data-target="-0.04384604m 0.07348397m -0.1213202m">
+            Test!
+          </button>
+        </div>
+
     </div>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
