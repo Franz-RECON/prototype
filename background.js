@@ -56,4 +56,5 @@ const colorbutton6 = document.getElementById("image2");
 colorbutton6.onclick = function(){
   modelViewer3.style.backgroundImage = "url('image2.png')";
   modelViewer3.style.backgroundSize = "cover";
+  modelViewer3.style.backgroundPosition= "center";
 }
