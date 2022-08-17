@@ -1,0 +1,71 @@
+:not(:defined) > * {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 10px;
+  border-radius: 8px;
+ /* border: 2px solid #1e1e1e;*/
+}
+
+#modelviewer_container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.each_viewer_container
+{
+  display: block;
+  width: 80%;
+  height: 80%;
+
+}
+
+.button_container{
+  position: relative;
+  top:-100%;
+  margin-left: auto;
+  width:min-content;
+  align-self: flex-end;
+
+}
+.view-button
+{
+  margin: 10px 20px;
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+
+
+border-radius: 8px;
+}
+
+.view-button:hover{
+  background-color: white;
+  color: black;
+}
+
+.color_container{
+  margin: 20px;
+
+}

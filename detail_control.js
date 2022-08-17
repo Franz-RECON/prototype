@@ -6,6 +6,8 @@ const annotationClicked = (annotation) => {
   modelViewer3.cameraTarget = dataset.target;
   modelViewer3.cameraOrbit = dataset.orbit;
   modelViewer3.fieldOfView = '45deg';
+
+
 }
 hotspot=document.getElementsByClassName("view-button");
 /*for(i =0; i< hotspot.length ; i++){
@@ -15,3 +17,9 @@ hotspot=document.getElementsByClassName("view-button");
 hotspot[0].addEventListener('click', () => annotationClicked(hotspot[0]));
 hotspot[1].addEventListener('click', () => annotationClicked(hotspot[1]));
 hotspot[2].addEventListener('click', () => annotationClicked(hotspot[2]));
+
+modelViewer3.addEventListener("mouseup", ()=> target_orbitlog());
+
+const target_orbitlog = () =>{
+  console.log(modelViewer3.getCameraOrbit());
+}
