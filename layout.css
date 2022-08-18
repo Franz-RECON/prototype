@@ -1,0 +1,51 @@
+:not(:defined) > * {
+    display: none;
+  }
+  
+  body {
+  }
+  
+  model-viewer {
+    width: auto;
+    height: 100%;
+
+    background: white;
+  }
+  
+  #modelviewer_container
+  {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 0px;
+    padding: 0px;
+    margin: 0;
+
+  }
+  #header{
+    grid-area: header;
+    height: 30vh;
+  }
+  #menu{
+    grid-area: menu;
+    height: 70vh;
+}
+  #main{
+    grid-area: main;
+  }
+  #right{
+    grid-area: right;
+  }
+  #footer{
+    grid-area: footer;
+  }
+.each_viewer_container {
+    text-align: center;
+    border: 1px solid black;
+
+  }
+
+
+  

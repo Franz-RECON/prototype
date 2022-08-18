@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./layout.css" rel="stylesheet"/>
+
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <div id="modelviewer_container">
+        <div class="each_viewer_container" id="header">  
+          <model-viewer id="firstmodel" src="models/1060.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> 
+          </model-viewer>
+        </div>
+        <div class="each_viewer_container" id="menu">
+          <model-viewer id="secondmodel" src="models/1061.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
+        </div>
+
+        <div class="each_viewer_container" id="main">
+          <model-viewer id="thirdmodel" src="models/1063.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> 
+          </model-viewer>
+        </div>
+        <div class="each_viewer_container" id="right">
+          <model-viewer id="thirdmodel" src="models/971.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> 
+          </model-viewer>
+        </div>
+        <div class="each_viewer_container" id="footer">
+          <model-viewer id="thirdmodel" src="models/974.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> 
+          </model-viewer>
+        </div>
+
+    </div>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+  </body>
+
+
+</html>
