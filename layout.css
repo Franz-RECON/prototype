@@ -9,7 +9,6 @@
     width: auto;
     height: 100%;
 
-    background: white;
   }
   
   #modelviewer_container
@@ -17,7 +16,7 @@
     display: grid;
     grid-template-areas:
       'header header header header header header'
-      'menu main main main right right'
+      'menu main main main main right'
       'menu footer footer footer footer footer';
     gap: 0px;
     padding: 0px;
@@ -26,7 +25,8 @@
   }
   #header{
     grid-area: header;
-    height: 30vh;
+    height: 80vh;
+    background: linear-gradient(to bottom, white, lightgray);
   }
   #menu{
     grid-area: menu;
