@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 F/W Catalog</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link type="text/css" href="./stylec.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titlecontainer">
+        <div class="brandname">BrandName</div>
+        <div class="productname">Product Name here</div>
+        <div class="serialnumber">22NUMBER40</div>
+    </div>
+    <div class="imagecontainer">
+        <img class="userimage" src="./resources/1.png" alt="">
+    </div>
+    
+    <div class="viewercontainer">
+        <plicar-viewer src=2c7eae3e455b233e62a32799339ab90ec2c312dc camera-controls exposure='1' environment-image='neutral' style="touch-action: none;"> </plicar-viewer>
+    </div>
+    <div class="buttoncontainer">
+        <img class="plicarARViewer" onclick="activateAR('2c7eae3e455b233e62a32799339ab90ec2c312dc', null, 'ko')" src="https://prod-assets.plicar.io/images/button/PlicarARProductViewButtonBlack.png" data-desktopqr>
+    </div>
+
+
+ <script type='module' src='https://prod-assets.plicar.io/script/plicar-viewer.min.js'></script> 
+ <script src="https://prod-assets.plicar.io/script/plicar-ARbutton.min.js"></script>
+ <script src="./scriptc.js"></script>
+</body>
+</html>

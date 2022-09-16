@@ -1,0 +1,59 @@
+body{
+
+}
+
+.titlecontainer{
+    padding: 24px;
+}
+.brandname{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+}
+.serialnumber{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+}
+.productname{
+    font-family: 'Pretendard';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+}
+
+.imagecontainer{
+    width: 100%;
+    height: 30vh;
+}
+img{
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+
+}
+
+
+
+
+.viewercontainer{
+    width: 100%;
+    height: 40vh;
+}
+plicar-viewer{
+    width: 100%;
+    height: 100%;
+}
+
+
+.buttoncontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.plicarARViewer{
+    width: 15rem;
+
+}
