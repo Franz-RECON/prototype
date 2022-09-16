@@ -4,6 +4,7 @@ body{
 
 .titlecontainer{
     padding: 24px;
+    padding-bottom: 10px;
 }
 .brandname{
     font-family: 'Pretendard';
